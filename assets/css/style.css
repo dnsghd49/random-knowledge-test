@@ -14,3 +14,7 @@ body {
     background: rgb(108, 108, 192);
     border-radius: 4px;
 }
+
+li {
+    list-style: none;
+}
