@@ -4,6 +4,6 @@
     "description": "Helps you find the characters you are looking for",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+        "start": "node server.js"
     }
-  }
+}
