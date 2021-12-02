@@ -2,9 +2,10 @@
 const question = document.querySelector('#question')
 const choices = Array.from(document.querySelectorAll('.choice'))
 const progressText = document.querySelector('#questionProg');
+const highScore = document.querySelector('#score');
 
 const MAX_QUESTIONS = 4
-
+const scorePoint = 0
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -46,5 +47,7 @@ function displayQnA() {
 choices.forEach(choice => {
     choice.addEventListener('click', displayQnA)
 })
+
+highScore.innerHTML = scorePoint
 
 start()
