@@ -2,7 +2,7 @@ const mostRecentScore = localStorage.getItem('mostRecentScore')
 const finalScore = document.querySelector('#finalScore')
 const username = document.querySelector('#username')
 const saveScoreBtn = document.querySelector('#saveScoreBtn')
-const api_base_url = "https://highscores-api.azurewebsites.net/swagger/v1/swagger.json"
+const api_base_url = "https://highscores-api.azurewebsites.net/highscores"
 const apiKey = "fc04308b-bc51-4df3-a1e0-6f8fa0076d03"
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
