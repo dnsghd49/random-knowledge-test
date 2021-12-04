@@ -11,11 +11,13 @@ const MAX_HIGH_SCORES = 5
 
 finalScore.innerText = mostRecentScore
 
-saveScoreBtn.addEventListener("click",saveHighScore)
+saveScoreBtn.addEventListener("click",sendHighScore)
 
 username.addEventListener("keyup", () => {
     saveScoreBtn.disabled = !username.value
 })
+
+
 
 async function sendHighScore(scoreData, UserId) {
     let response = await fetch(api_base_url, {
@@ -30,8 +32,11 @@ async function sendHighScore(scoreData, UserId) {
         })
     })
     let data = await response.json()
+    // return data
     console.log('new', data)
 }
+sendHighScore()
+
 
 //Saving scores that user entered
 function saveHighScore(e) {

@@ -10,8 +10,7 @@ async function getHighScores() {
         }
     })
     let highscores = await response.json()
-    // return highscores;
-    console.log(highscores)
+    return highscores;
 }
 
 // let highscores = await getHighScores();
