@@ -28,12 +28,7 @@ async function sendHighScore(scoreData, UserId) {
         })
     })
     let data = await response.json()
-    //does new highscore show up?
     console.log('new', data)
-
-    let highscores = await getHighScores();
-    console.log(highscores)
-
 }
 
 //Saving scores that user entered
