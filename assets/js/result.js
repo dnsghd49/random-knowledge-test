@@ -14,7 +14,7 @@ username.addEventListener('keyup', () => {
 })
 
 //Saving scores that user entered
-saveHighScore = e => {
+function saveHighScore(e) {
     e.preventDefault()
 
     const score = {

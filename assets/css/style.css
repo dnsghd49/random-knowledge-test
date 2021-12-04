@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -24,18 +24,18 @@ body {
 li {
     list-style: none;
 }
-  
+
 h1 {
     font-size: 3rem;
     color: floralwhite;
     margin-bottom: 5rem;
 }
-  
+
 h2 {
     font-size: 4.2rem;
     margin-bottom: 4rem;
 }
-  
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -46,14 +46,14 @@ h2 {
     margin: 0 auto;
     padding: 2rem;
 }
-  
+
 .leaderBoard {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-  
+
 .btn {
     font-size: 2.4rem;
     padding: 2rem 0;
@@ -65,14 +65,15 @@ h2 {
     background: rgb(108, 108, 192);
     border-radius: 4px;
 }
-  
-.btn, .choice-btn:hover {
+
+.btn,
+.choice-btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgb(108, 108, 192);
     transition: transform 150ms;
     transform: scale(1.03);
 }
-  
+
 .btn[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
@@ -88,9 +89,9 @@ h2 {
 }
 
 .correct {
-    background: linear-gradient(32deg, rgb(96, 148, 96) 0%, rgb(96, 148, 96) 100%)
+    background: linear-gradient(32deg, rgb(96, 148, 96) 0%, rgb(96, 148, 96) 100%);
 }
 
-.incorrect{
-    background: linear-gradient(32deg, rgb(163, 24, 24) 0%,  rgb(163, 24, 24) 100%)
+.incorrect {
+    background: linear-gradient(32deg, rgb(163, 24, 24) 0%, rgb(163, 24, 24) 100%);
 }
