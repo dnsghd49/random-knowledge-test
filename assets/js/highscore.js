@@ -1,6 +1,6 @@
 const highScoresList = document.querySelector('#highScoresList')
 const highScores = JSON.parse(localStorage.getItem("highScores")) || []
-const api_base_url = "https://highscores-api.azurewebsites.net/swagger/v1/swagger.json"
+const api_base_url = "https://highscores-api.azurewebsites.net/highscores"
 const apiKey = "fc04308b-bc51-4df3-a1e0-6f8fa0076d03"
 
 async function getHighScores() {
