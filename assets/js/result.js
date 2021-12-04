@@ -9,7 +9,9 @@ const MAX_HIGH_SCORES = 5
 
 finalScore.innerText = mostRecentScore
 
-username.addEventListener('keyup', () => {
+saveScoreBtn.addEventListener("click",saveHighScore)
+
+username.addEventListener("keyup", () => {
     saveScoreBtn.disabled = !username.value
 })
 
@@ -29,10 +31,10 @@ function saveHighScore(e) {
     })
 
     //Max user 
-    highScores.splice(5)
 
-    localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('')
+
+    localStorage.setItem("highScores", JSON.stringify(highScores))
+    window.location.assign("")
 
 
 }
