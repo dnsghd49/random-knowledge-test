@@ -1,6 +1,6 @@
 //Dom Elements 
 const question = document.querySelector('#question')
-const choices = Array.from(document.querySelectorAll('.choice'))
+const choices = Array.from(document.querySelectorAll('#choice'))
 const progressText = document.querySelector('#questionProg');
 const highScore = document.querySelector('#score');
 

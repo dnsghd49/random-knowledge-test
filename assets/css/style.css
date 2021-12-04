@@ -79,13 +79,17 @@ h2 {
     box-shadow: none;
     transform: none;
 }
-
+.choice {
+    padding: 1em;
+}
 .choice-btn {
     font-size: 2em;
+    padding: 1em;
     text-align: center;
     margin-bottom: 1rem;
     color: black;
     background: rgb(108, 108, 192);
+    
 }
 
 .correct {
