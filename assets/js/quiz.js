@@ -38,5 +38,13 @@ const questions = [
         choice3: "for loops",
         choice4: "console.log",
         answer: 4,
+    },
+    {
+        question: "A very useful tool used during development and debugging for printing content to the debugger is:",
+        choice1: "JavaScript",
+        choice2: "terminal / bash",
+        choice3: "for loops",
+        choice4: "console.log",
+        answer: 4,
     }
 ]

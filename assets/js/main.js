@@ -41,6 +41,12 @@ function displayQnA() {
     availableQuestions.splice(questionsIndex, 1)
 
     acceptingAnswers = true
+
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        localStorage.setItem('mostRecentScore', score)
+
+        return window.location.assign('result.html')
+    }
 }
 
 //Display next question on click of a choice
