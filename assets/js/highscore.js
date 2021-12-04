@@ -12,7 +12,6 @@ async function getHighScores() {
     let highscores = await response.json()
     // return highscores;
     console.log(highscores)
-    console.log(highscores)
 }
 
 // let highscores = await getHighScores();
