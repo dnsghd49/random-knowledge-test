@@ -5,12 +5,13 @@ const progressText = document.querySelector('#questionProg');
 const highScore = document.querySelector('#score');
 
 const MAX_QUESTIONS = 4
-const scorePoint = 0
+const scorePoint = 100
 
 let currentQuestion = {}
 let acceptingAnswers = true
 let availableQuestions = []
 let questionCounter = 0
+let score = 0
 
 //Getting questions values  
 function start() {
@@ -48,12 +49,32 @@ function displayQnA() {
         return window.location.assign('result.html')
     }
 }
-
+function incrementScore(num) {
+    score += num
+    highScore.innerText = score
+}
 //Display next question on click of a choice
 choices.forEach(choice => {
-    choice.addEventListener('click', displayQnA)
-})
+    choice.addEventListener('click', e => {
+        if (!acceptingAnswers) return
 
-highScore.innerHTML = scorePoint
+        acceptingAnswers = false
+        const selectedChoice = e.target
+        const selectedAnswer = selectedChoice.dataset['number']
+
+        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+        //If the answer is correct +100 points
+        if (classToApply === 'correct') {
+            incrementScore(scorePoint)
+        }
+
+        selectedChoice.parentElement.classList.add(classToApply)
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply)
+            displayQnA()
+        }, 1000)
+    })
+})
 
 start()
