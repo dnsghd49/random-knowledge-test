@@ -18,6 +18,7 @@ username.addEventListener("keyup", () => {
 })
 
 async function sendHighScore() {
+    let user = username.value
     let response = await fetch(api_base_url, {
         method: "POST",
         headers: {
@@ -25,7 +26,7 @@ async function sendHighScore() {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            Data: username.value,
+            Data: user,
             userId: mostRecentScore
         })
     })
