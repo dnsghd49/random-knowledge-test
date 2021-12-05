@@ -25,7 +25,7 @@ async function sendHighScore() {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            Data: "testName",
+            Data: username.value,
             userId: mostRecentScore
         })
     })
