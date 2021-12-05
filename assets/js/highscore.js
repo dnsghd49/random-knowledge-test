@@ -10,14 +10,14 @@ async function getHighScores() {
         }
     })
     let highscores = await response.json()
-    highScoresList.innerHTML =
-    highScores.map(() => {
-        return `<li class="high-score">${highscores.userId} - ${highscores.data}</li>`
-    }).join("")
-    // console.log(highscores)
+    // return highscores;
+    console.log(highscores)
 }
 
 // let highscores = await getHighScores();
 // console.log(highscores)
-
-    getHighScores()
+getHighScores()
+highScoresList.innerHTML =
+    highScores.map(score => {
+        return `<li class="high-score">${score.name} - ${score.score}</li>`
+    }).join("")
