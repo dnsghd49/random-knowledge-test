@@ -10,8 +10,11 @@ async function getHighScores() {
         }
     })
     let highscores = await response.json()
-    // return highscores;
+    let id = highscores.id
+    let userName = highscores.data
     console.log(highscores)
+    console.log(id)
+    console.log(userName)
 }
 
 // let highscores = await getHighScores();
