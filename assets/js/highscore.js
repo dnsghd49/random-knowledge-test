@@ -10,17 +10,20 @@ async function getHighScores() {
         }
     })
     let highscores = await response.json()
-    let id = highscores.UserId
-    let userName = highscores.Data
-    console.log(highscores)
-    console.log(id)
-    console.log(userName)
+
+    let datas = highscores
+    let lists = document.createElement("li")
+    lists.innerHTML = datas
+    lists.appendChild(highScoresList)
+
+
+    // console.log(highscores)
 }
 
 // let highscores = await getHighScores();
 // console.log(highscores)
 getHighScores()
-highScoresList.innerHTML =
-    highScores.map(score => {
-        return `<li class="high-score">${score.name} - ${score.score}</li>`
-    }).join("")
+// highScoresList.innerHTML =
+//     highScores.map(score => {
+//         return `<li class="high-score">${score.name} - ${score.score}</li>`
+//     }).join("")
