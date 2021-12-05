@@ -11,9 +11,9 @@ async function getHighScores() {
     })
     let highscores = await response.json()
 
-    let datas = highscores
+    let test1 = highscores.id
     let lists = document.createElement("li")
-    lists.innerHTML = datas
+    lists.innerHTML = test1
     lists.appendChild(highScoresList)
 
 
