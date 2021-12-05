@@ -25,8 +25,8 @@ async function sendHighScore() {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            Data: 400,
-            userName: "testName"
+            Data: finalScore,
+            userId: "testName"
         })
     })
     let data = await response.json()
