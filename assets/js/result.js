@@ -25,13 +25,13 @@ async function sendHighScore() {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({
-            Data: mostRecentScore,
-            UserId: username.value
+            Data: 400,
+            UserId: "testName"
         })
     })
     let data = await response.json()
     // return data
-    console.log("new", data)
+    // console.log("new", data)
 }
 // sendHighScore(mostRecentScore, username)
 
