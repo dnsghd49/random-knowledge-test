@@ -11,13 +11,11 @@ const MAX_HIGH_SCORES = 5
 
 finalScore.innerText = mostRecentScore
 
-saveScoreBtn.addEventListener("click", sendHighScore(mostRecentScore, username))
+saveScoreBtn.addEventListener("click", sendHighScore(finalScore, username.value))
 
 username.addEventListener("keyup", () => {
     saveScoreBtn.disabled = !username.value
 })
-
-
 
 async function sendHighScore(scoreData, UserId) {
     let response = await fetch(api_base_url, {
@@ -39,25 +37,25 @@ async function sendHighScore(scoreData, UserId) {
 
 
 //Saving scores that user entered
-function saveHighScore(e) {
-    e.preventDefault()
+// function saveHighScore(e) {
+//     e.preventDefault()
 
-    const score = {
-        score: mostRecentScore,
-        name: username.value
-    }
+//     const score = {
+//         score: mostRecentScore,
+//         name: username.value
+//     }
 
-    highScores.push(score)
+//     highScores.push(score)
 
-    highScores.sort((a, b) => {
-        return b.score - a.score
-    })
+//     highScores.sort((a, b) => {
+//         return b.score - a.score
+//     })
 
-    //Max user 
-
-
-    localStorage.setItem("highScores", JSON.stringify(highScores))
-    window.location.assign("")
+//     //Max user 
 
 
-}
+//     localStorage.setItem("highScores", JSON.stringify(highScores))
+//     window.location.assign("")
+
+
+// }
