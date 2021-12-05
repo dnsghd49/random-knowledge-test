@@ -17,7 +17,7 @@ async function getHighScores() {
     lists.appendChild(highScoresList)
 
 
-    // console.log(highscores)
+    console.log(highscores)
 }
 
 // let highscores = await getHighScores();
