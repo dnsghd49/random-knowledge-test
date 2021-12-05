@@ -35,7 +35,7 @@ async function sendHighScore(scoreData, UserId) {
     // return data
     console.log(400, data)
 }
-sendHighScore(400, Player1)
+sendHighScore(400, "Player1")
 
 
 //Saving scores that user entered
