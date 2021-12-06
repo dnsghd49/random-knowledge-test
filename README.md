@@ -9,22 +9,13 @@
 ## Description
 A simple quiz that asks questions about javascript and the questions and answers will get randomized every time when the browser refreshes. The quiz has a progress texts to track the questions, and it also tracks the score to display at the end. If the user wants, the user can log their score at the end to track their high scores.
 
-## Table of Contents 
+## Deployed_Link
 
-* [Screenshot](#screenshot)
-
-* [Deployed Link](#Deployed_Link)
-
-* [Questions](#questions)
-
+https://dnsghd49.github.io/random-knowledge-test/index.html
 
 ## Screenshot
 
 ![ScreenShot](https://github.com/dnsghd49/random-knowledge-test/blob/main/assets/img/screenshot.png)
-
-## Deployed_Link
-
-https://dnsghd49.github.io/random-knowledge-test/index.html
 
 ## Questions
 
