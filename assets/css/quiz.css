@@ -1,0 +1,52 @@
+body{
+    color: #ffffff;
+}
+
+.quiz-container {
+    margin: 10%;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background: rgb(108, 108, 192);
+    font-size: 3rem;
+    min-width: 80rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(108, 108, 192);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-text {
+    padding: 32px;
+    width: 100%;
+}
+
+.correct {
+    background: linear-gradient(32deg, rgb(96, 148, 96) 0%, rgb(96, 148, 96) 100%)
+}
+
+.incorrect{
+    background: linear-gradient(32deg, rgb(163, 24, 24) 0%,  rgb(163, 24, 24) 100%)
+}
+
+.progress {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz-progress {
+    margin-left: 10%;
+    font-size: 50px;
+}
+
+.score {
+    margin-right: 10%;
+    font-size: 50px;
+}

@@ -66,8 +66,7 @@ h2 {
     border-radius: 4px;
 }
 
-.btn,
-.choice-btn:hover {
+.btn:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgb(108, 108, 192);
     transition: transform 150ms;
@@ -78,24 +77,4 @@ h2 {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
-}
-.choice {
-    padding: 1em;
-}
-.choice-btn {
-    font-size: 2em;
-    padding: 1em;
-    text-align: center;
-    margin-bottom: 1rem;
-    color: black;
-    background: rgb(108, 108, 192);
-    
-}
-
-.correct {
-    background: linear-gradient(32deg, rgb(96, 148, 96) 0%, rgb(96, 148, 96) 100%);
-}
-
-.incorrect {
-    background: linear-gradient(32deg, rgb(163, 24, 24) 0%, rgb(163, 24, 24) 100%);
 }

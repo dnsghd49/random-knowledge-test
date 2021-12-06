@@ -36,7 +36,7 @@ function displayQnA() {
 
     //Display number of questions
     questionCounter++
-    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`
+    progressText.innerText = `Question: ${questionCounter} / ${MAX_QUESTIONS}`
 
     //A stopper to stop displaying the same questions
     availableQuestions.splice(questionsIndex, 1)
