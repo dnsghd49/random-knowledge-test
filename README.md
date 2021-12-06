@@ -20,7 +20,7 @@ A simple quiz that asks questions about javascript and the questions and answers
 
 ## Screenshot
 
-![ScreenShot](https://raw.github.com/dnsghd49/random-knowledge-test/blob/main/assets/img/screenshot.png)
+![ScreenShot](https://github.com/dnsghd49/random-knowledge-test/blob/main/assets/img/screenshot.png)
 
 ## Deployed_Link
 
