@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/result.css">
     <title>Result</title>
 </head>
 
 <body>
-    <div>
-        <div>
+    <div class="container">
+        <div class="positioning">
             <h1 id="finalScore">0</h1>
-            <form>
-                <h2>Enter your name below to save your score!</h2>
+            <form class="r-container">
+                <h2 class="logging">Enter your name below to save your score!</h2>
                 <input id="username" type="text" name="name" placeholder="Enter your name">
-                <button id="saveScoreBtn" type="submit">Save</button>
+                <button id="saveScoreBtn" type="submit" class="r-btn" disabled>Save</button>
             </form>
             <a href="quiz.html" class="r-btn">Play Again</a>
             <a href="index.html" class="r-btn">Go Home</a>
