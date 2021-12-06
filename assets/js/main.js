@@ -4,7 +4,7 @@ const choices = Array.from(document.querySelectorAll('#choice'))
 const progressText = document.querySelector('#questionProg');
 const highScore = document.querySelector('#score');
 
-const MAX_QUESTIONS = 10
+const MAX_QUESTIONS = 8
 const scorePoint = 100
 
 let currentQuestion = {}
